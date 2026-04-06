@@ -511,7 +511,7 @@
 <header>
   <div class="logo">
     <div class="logo-dot"></div>
-    FinanceFlow
+    Finance
   </div>
   <nav>
     <button class="active" onclick="showTab('dashboard')">Dashboard</button>
@@ -955,13 +955,13 @@ function init() {
 
 function loadState() {
   try {
-    const s = localStorage.getItem('financeflow_state');
+    const s = localStorage.getItem('finance_state');
     if (s) state = {...state, ...JSON.parse(s)};
   } catch(e) {}
 }
 
 function saveState() {
-  localStorage.setItem('financeflow_state', JSON.stringify(state));
+  localStorage.setItem('finance_state', JSON.stringify(state));
 }
 
 // ============================
